@@ -1,0 +1,38 @@
+.social-media {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.media-text {
+  font-family: 'Gilroy';
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2;
+
+  writing-mode: vertical-rl;
+}
+
+.media-link {
+  padding: 12px 0;
+
+  &.insta {
+    padding-top: 24px;
+  }
+  &:hover .media-icon {
+    fill: $accent;
+  }
+}
+
+.media-icon {
+  fill: #fff;
+  width: 24px;
+  height: 24px;
+
+  transition-duration: 250ms;
+  transition-timing-function: $transition;
+}

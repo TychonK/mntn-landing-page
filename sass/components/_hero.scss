@@ -1,0 +1,33 @@
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section.hero {
+  padding-top: 198px;
+  padding-bottom: 0;
+
+  @media (max-width: 767px) {
+    padding-top: 130px;
+  }
+  @media (max-width: 400px) {
+    padding-top: 100px;
+  }
+}
+
+.hero-section {
+  margin-bottom: 17%;
+
+  @media (max-width: 950px) {
+    margin-bottom: 13%;
+  }
+}
+
+.hero-content {
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,38 @@
+.scroll-menu {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.scroll-start {
+  font-family: 'Gilroy';
+  font-size: 18px;
+  line-height: 1.2;
+
+  text-align: right;
+
+  transition-duration: 250ms;
+  transition-timing-function: $transition;
+  &:hover {
+    color: $accent;
+  }
+}
+
+.scroll-point {
+  font-family: 'Gilroy';
+  font-size: 18px;
+  line-height: 1.2;
+
+  text-align: right;
+
+  margin-top: 40px;
+
+  transition-duration: 250ms;
+  transition-timing-function: $transition;
+  &:hover {
+    color: $accent;
+  }
+}

@@ -1,0 +1,180 @@
+.card-container {
+  display: inline-flex;
+  align-items: center;
+
+  justify-content: space-between;
+
+  position: relative;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.card_img {
+  @media (max-width: $pc) {
+    width: 370px;
+  }
+  @media (max-width: 767px) {
+    width: 50%;
+  }
+}
+
+.number {
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 0.8;
+  opacity: 0.1;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  @media (max-width: $pc) {
+    font-size: 170px;
+  }
+  @media (max-width: 767px) {
+    font-size: 100px;
+  }
+}
+
+.number-2 {
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 0.8;
+  opacity: 0.1;
+
+  position: absolute;
+  left: 500px;
+  top: 0;
+
+  @media (max-width: $pc) {
+    font-size: 170px;
+    left: 400px; 
+  }
+  @media (max-width: 767px) {
+    font-size: 100px;
+    left: 270px;
+  }
+}
+
+.card-info {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 95px;
+  margin-left: 95px;
+
+  @media (max-width: $pc) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+.card-info-2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 145px;
+
+  @media (max-width: $pc) {
+    margin-left: 50px;
+  }
+}
+
+.secondary-title {
+  font-family: 'ChronicD';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.2;
+
+  margin: 27px 0;
+
+  @media (max-width: $pc) {
+    font-size: 38px;
+  }
+  @media (max-width: 767px) {
+    font-size: 28px;
+    margin: 14px 0;
+  }
+}
+
+.card-text {
+  font-family: 'Gilroy';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.8;
+
+  margin: 0;
+  margin-bottom: 27px;
+
+  @media (max-width: $pc) {
+    font-size: 15px;
+  }
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+}
+
+.read-more {
+  font-family: 'Gilroy';
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700; 
+  color: $accent;
+  vertical-align: middle;
+
+  padding: 10px 0;
+
+  &:hover .read-arrow {
+    margin-left: 20px;
+  }
+  @media (max-width: 767px) {
+    font-size: 15px;
+  }
+}
+
+.read-arrow {
+  fill: $accent;
+  width: 16px;
+  height: 24px;
+  vertical-align: middle;
+  margin-left: 16px;
+  transform: rotate(270deg);
+
+  transition-duration: 250ms;
+  transition-timing-function: $transition;
+}
+
+.mobile-photos {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-moblie {
+  @media (min-width: 500px) {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.secondary-mobile {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.card-text--mobile {
+  text-align: center;
+}
+
+.read-more--mobile {
+  text-align: center;
+  display: block;
+}

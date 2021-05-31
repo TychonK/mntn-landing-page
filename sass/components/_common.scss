@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'ChronicD';
+  src: url(../fonts/chronicle-display-bold.otf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'ChronicD';
+  src: url(../fonts/chronicle-display-semibold.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Extrabold.ttf);
+  font-weight: 800;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+  background: $background;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+}
+
+.section {
+  padding: 100px 0;
+  width: 100%;
+}
+
+.section-mobile {
+  padding: 50px 0;
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+
+  @media (min-width: $mobile) and (max-width: 767px) {
+    max-width: 600px;
+  }
+  @media (min-width: $tablet) {
+    width: 768px;
+  }
+  @media (min-width: $pc) {
+    width: 1200px;
+  }
+}
+
+.pc {
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}

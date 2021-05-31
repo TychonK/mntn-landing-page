@@ -1,0 +1,88 @@
+.title {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.375em;
+  text-transform: uppercase;
+
+  color: $accent;
+
+  position: relative;
+
+  margin: 0;
+  padding-left: 104px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 72px;
+    height: 2px;
+    background-color: $accent;
+
+    @media (max-width: $pc) {
+      top: 8px;
+
+    }
+  }
+
+  @media (max-width: $pc) {
+    font-size: 15px;
+  }
+  @media (max-width: 767px) {
+    padding-left: 100px; 
+    font-size: 14px;
+  }
+}
+
+.hero-text {
+  font-family: 'ChronicD';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 78px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  width: 818px;
+  margin: 32px 0;
+
+  @media (max-width: $pc) {
+    font-size: 54px;
+    width: 566px;
+  }
+  @media (max-width: 767px) {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.scroll-link {
+  display: flex;
+  flex-direction: row;
+  color: $white;
+  text-decoration: none;
+
+  &:hover .scroll-arrow {
+    fill: $accent;
+  }
+}
+
+.scroll-text {
+  font-family: 'Gilroy';
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-right: 16px;
+}
+
+.scroll-arrow {
+  height: 24px;
+  width: 16px;
+  fill: $white;
+
+  transition-duration: 250ms;
+  transition-timing-function: $transition;
+}
